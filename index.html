@@ -26,17 +26,17 @@
 	<section>
 		<form id="survey-form">
 			<fieldset id="personal-data" class="fieldset-base">
-				<legend>Personal data</legend>
-				<label id="name-label" for="name">Name and surname</label>
+				<legend id="legend-data">Personal data</legend>
+				<label class="label-alone" id="name-label" for="name">Name and surname</label>
 				<input class="input-alone" id="name" placeholder="Name and surname" type="text" required>
-				<label id="email-label" for="email">Email address</label>
+				<label class="label-alone" id="email-label" for="email">Email address</label>
 				<input class="input-alone" id="email" placeholder="Email" type="email" required>
-				<label id="number-label" for="number">Number</label>
+				<label class="label-alone" id="number-label" for="number">Number</label>
 				<input class="input-alone" id="number" placeholder="Number" type="number" min="0" max="100" value="50">
 			</fieldset>
 			
 			<label id="dropdown-label" for="dropdown">Select your favorite culinary creation</label>
-			<select class="input-alone" id="dropdown">
+			<select id="dropdown">
 				<option value="none">Select one option</option>
 				<option value="pasta">Pasta with tomatoe sauce</option>
 				<option value="cereal">Cereal</option>
@@ -53,17 +53,14 @@
 				<label for="radio2">Soccer
 					<input id="radio2" type="radio" name="radio-inputs" value="soccer"> 
 				</label>
-				<label for="radio3">Baseball
+				<label for="radio3">Football
 					<input id="radio3" type="radio" name="radio-inputs" value="baseball"> 
-				</label>
-				<label for="radio4">Football
-					<input id="radio4" type="radio" name="radio-inputs" value="football"> 
 				</label>
 			</fieldset>
 
 			
 			<fieldset class="fieldset-base">
-				<legend>Are you enjoying your time reviewing this survey?</legend>
+				<legend>Are you having fun reviewing this survey?</legend>
 				<label for="reviewy">Yes
 					<input value="yes" type="checkbox" id="reviewy">
 				</label>
@@ -81,6 +78,9 @@
 			<button id="submit" type="submit">Submit</button>
 		</form>
 	</section>
+	<footer>
+		
+	</footer>
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
