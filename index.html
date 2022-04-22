@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-		<div>
+		<div class="heading">
 			<h1 id="title">
 				Survey Form FCC
 			</h1>
@@ -25,18 +25,18 @@
 
 	<section>
 		<form id="survey-form">
-			<fieldset>
+			<fieldset id="personal-data" class="fieldset-base">
 				<legend>Personal data</legend>
 				<label id="name-label" for="name">Name and surname</label>
-				<input id="name" placeholder="Name and surname" type="text" required>
+				<input class="input-alone" id="name" placeholder="Name and surname" type="text" required>
 				<label id="email-label" for="email">Email address</label>
-				<input id="email" placeholder="Email" type="email" required>
+				<input class="input-alone" id="email" placeholder="Email" type="email" required>
 				<label id="number-label" for="number">Number</label>
-				<input id="number" placeholder="Number" type="number" min="0" max="100" value="50">
+				<input class="input-alone" id="number" placeholder="Number" type="number" min="0" max="100" value="50">
 			</fieldset>
 			
 			<label id="dropdown-label" for="dropdown">Select your favorite culinary creation</label>
-			<select id="dropdown">
+			<select class="input-alone" id="dropdown">
 				<option value="none">Select one option</option>
 				<option value="pasta">Pasta with tomatoe sauce</option>
 				<option value="cereal">Cereal</option>
@@ -45,24 +45,24 @@
 			</select>
 
 
-			<fieldset>
+			<fieldset class="fieldset-base">
 				<legend>Select your favorite sport to watch</legend>
-				<label for="radio1"> 
-					<input id="radio1" type="radio" name="radio-inputs" value="basketball">Basketball 
+				<label for="radio1">Basketball
+					<input id="radio1" type="radio" name="radio-inputs" value="basketball"> 
 				</label>
-				<label for="radio2"> 
-					<input id="radio2" type="radio" name="radio-inputs" value="soccer">Soccer 
+				<label for="radio2">Soccer
+					<input id="radio2" type="radio" name="radio-inputs" value="soccer"> 
 				</label>
-				<label for="radio3"> 
-					<input id="radio3" type="radio" name="radio-inputs" value="baseball">Baseball 
+				<label for="radio3">Baseball
+					<input id="radio3" type="radio" name="radio-inputs" value="baseball"> 
 				</label>
-				<label for="radio4"> 
-					<input id="radio4" type="radio" name="radio-inputs" value="football">Football 
+				<label for="radio4">Football
+					<input id="radio4" type="radio" name="radio-inputs" value="football"> 
 				</label>
 			</fieldset>
 
 			
-			<fieldset>
+			<fieldset class="fieldset-base">
 				<legend>Are you enjoying your time reviewing this survey?</legend>
 				<label for="reviewy">Yes
 					<input value="yes" type="checkbox" id="reviewy">
@@ -70,13 +70,13 @@
 				<label for="reviewn">No
 					<input value="no" type="checkbox" id="reviewn">
 				</label>
-				<label for="reviewdk">I rather not answer
+				<label for="reviewdk">I´d rather not answer
 					<input value="dontknow" type="checkbox" id="reviewdk">
 				</label>
 			</fieldset>
 
-			<label for="text-comment">Lave your thoughts and comments regarding this survey</label>
-			<textarea id="text-comment" rows="10" cols="30"></textarea>
+			<label id="label-text" for="text-comment">Leave your thoughts and comments regarding this survey down bellow</label>
+			<textarea class="input-alone text-input" id="text-comment" rows="10" cols="30"></textarea>
 
 			<button id="submit" type="submit">Submit</button>
 		</form>
